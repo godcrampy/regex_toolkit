@@ -2,11 +2,7 @@ import 'package:regex_toolkit/regex_toolkit.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('Common regualer expressions', () {
-    setUp(() {
-      // awesome = Awesome();
-    });
-
+  group('Common regular expressions', () {
     test('credit card', () {
       var masterCardSample = '5555555555554444';
       var visaSample = '4012888888881881';
