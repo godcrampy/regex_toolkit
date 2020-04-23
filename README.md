@@ -1,7 +1,8 @@
-A library for Dart developers.
+# Regex Toolkit
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+![Dart CI](https://github.com/godcrampy/regex_toolkit/workflows/Dart%20CI/badge.svg)
+
+A collection of commonly used regular expressions
 
 ## Usage
 
@@ -10,13 +11,49 @@ A simple usage example:
 ```dart
 import 'package:regex_toolkit/regex_toolkit.dart';
 
-main() {
-  var awesome = new Awesome();
+void main() {
+  var email = 'john@doe.com';
+
+  if (RegexToolkit.emailId.hasMatch(email)) {
+    print('Valid Email');
+  } else {
+    print('Invalid Email');
+  }
 }
+
 ```
 
-## Features and bugs
+### Available Regex
 
-Please file feature requests and bugs at the [issue tracker][tracker].
+- Simple
 
-[tracker]: http://example.com/issues/replaceme
+  - Alphanumeric (+ with spaces)
+  - Alphabet (+ case sensitive)
+  - Digits
+  - Decimals (+ signed)
+
+- User
+
+  - Username
+  - Password
+  - Email
+
+- Internet
+
+  - URL
+  - IPv4
+  - IPv6
+
+- Date
+
+- Identity
+  - SSN
+  - International Phone Number
+  - Passport
+  - Credit Card
+
+## Authors
+
+- **Sahil Bondre** - [godcrampy](https://github.com/godcrampy)
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/godcrampy/regex_toolkit/blob/master/LICENSE) file for details
